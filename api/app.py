@@ -15,7 +15,7 @@ class Hello(Resource):
         return {"message": message}
 
 
-api.add_resource(Hello, '/api/hello')
+api.add_resource(Hello, '/api/v1/hello')
 
 if __name__ == '__main__':
     app.run(debug=True)
